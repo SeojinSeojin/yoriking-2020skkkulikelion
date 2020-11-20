@@ -23,15 +23,16 @@ body {
 
 .main-title {
     font-family: BMEuljiro10yearslater;
-    height: 25vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
+    color: rgb(49, 46, 129);
 }
 
 .games {
-    height: 75vh;
+    height: 80vh;
     padding: 1rem;
     background-color: rgb(224, 231, 255);
 }
@@ -75,6 +76,10 @@ body {
 }
 
 footer {
-    height: 10vh;
+    height: 6rem;
     text-align: center;
+    background-color: rgb(67, 56, 202);
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
