@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요리왕 - 혜화</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+</head>
+
+<body>
+
+    <!-- 이 양식을 따라 데이터 삽입. 
+    <div class="card custom-card">
+        <a class="modal-trigger" href="#modal1">
+            <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./img/cook-unsplash.jpg">
+            </div>
+            <div class="custom-card-content">
+                <span class="card-title activator grey-text text-darken-4">가게 제목</span>
+                <div class="chip">
+                    <img src="./img/avocado.png" alt="Contact Person"> 가게 장르
+                </div>
+            </div>
+        </a>
+    </div>
+    여기부터 모달 부분
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>가게 제목</h4>
+            <img class="materialboxed" width="650" src="./img/avocado.png">
+            <img class="materialboxed" width="650" src="./img/avocado.png">
+            <img class="materialboxed" width="650" src="./img/avocado.png">
+            <p>상세 설명</p>
+            <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+        </div>
+    </div>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var options = {};
+            var instances = M.Modal.init(elems, options);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var options = {};
+            var instances = M.Materialbox.init(elems, options);
+        });
+    </script>
+
+</body>
+
+</html>

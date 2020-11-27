@@ -79,6 +79,18 @@ body {
     height: 22rem!important;
 }
 
+.modal-content img {
+    width: 100%;
+    margin-right: 2%;
+    height: auto;
+    display: inline-block;
+}
+
+.material-placeholder {
+    display: inline-block;
+    width: 32%;
+}
+
 footer {
     height: 6rem;
     text-align: center;
