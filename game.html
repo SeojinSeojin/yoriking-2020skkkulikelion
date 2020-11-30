@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px 0px;
+            width: 10%;
+            height: 50px;
+            background-color: #f3a7d3;
+            position: absolute;
+            margin-top: 56px;
+          }
+          #timer { background-color: #bbdefb; }
+
+        img{
+            position: absolute;
+        }
+        #통2{
+            left: 693px;
+            height: 400px;
+            top:99px;
+        }
+        #말개{
+            top: 95px;
+            left: 265px;
+            height: 400px;
+            z-index:-9;
+        }
+        #김{
+            height: 150px;
+            left: 30px;
+        }
+        .김 img:hover{
+            cursor: pointer;
+            -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+            transition: transform .35s;
+        }
+        #단무지{
+            top: 294px;
+        }
+        #단무지2{
+            top: 294px;
+        }
+        #밥1{
+            top: 157px;
+            height: 135px;
+            left: 30px;
+        }
+        #시금치{
+            top: 328px;
+        }
+        #당근{
+            top: 403px;
+        }
+        #시금치2{
+            top: 328px;
+        }
+        #당근2{
+            top: 403px;
+        }
+        #소스{
+            top: 429px;
+            z-index:10;
+        }
+        #이쑤시게{
+            top: 422px;
+            left: 158px;
+            z-index:10;
+        }
+        #마약김밥{
+            z-index:9;
+        }
+
+        button{
+            margin-top: 526px;
+            margin-left: 256px;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script> -->
+    <script>
+        $( document ).ready( function() {
+              $( '#timer' ).animate( {
+                width: '1000px'
+              }, 50000, 'swing' );
+          } );
+
+
+        $( function() {
+            $( "#김" ).draggable();
+          } );
+          function getLoc(event){
+            var x = event.clientX;
+            var y = event.clientY;
+            
+            if (400<x & x<530 & 240<y & y<330){
+                    event.target.style.width="320px";
+                    event.target.style.height="320px";
+            }
+
+            else{
+                alert("김을 가운데로 옮겨주세요");
+            }
+          }
+            
+            
+        
+          $( function() {
+            $( "#시금치" ).draggable();
+          } );
+          $( function() {
+            $( "#당근" ).draggable();
+          } );
+          $( function() {
+            $( "#단무지" ).draggable();
+          } );
+          $( function() {
+            $( "#시금치2" ).draggable();
+          } );
+          $( function() {
+            $( "#당근2" ).draggable();
+          } );
+          $( function() {
+            $( "#단무지2" ).draggable();
+          } );
+          $( function() {
+            $( "#소스" ).draggable();
+          } );
+          $( function() {
+            $( "#이쑤시게" ).draggable();
+          } );
+          $( function() {
+            $( "#밥1" ).draggable();
+          } );
+          function getLoc1(event){
+            var x = event.clientX;
+            var y = event.clientY;
+            
+            if (400<x & x<530 & 240<y & y<330){
+                    event.target.style.width="320px";
+                    event.target.style.height="320px";
+            }
+
+            else{
+                alert("밥을 가운데로 옮겨주세요");
+            }
+          }
+          function getLoc2(event){
+            var x = event.clientX;
+            var y = event.clientY;
+            
+            if (400<x & x<530 & 240<y & y<330){
+            }
+
+            else{
+                alert("재료를 가운데로 옮겨주세요");
+            }
+          }
+          $("#밥1").dblclick(function() {
+            alert("double click");
+          });
+    </script>
+</head>
+<body>
+    
+    <img src="image/도마.png", width="1000px" height="600px" style="z-index:-10;">
+    <img src="image/말개.png" id="말개">
+    
+    
+    <img id="김" class="김" src="image/김.png" onClick="javascript:getLoc(event)">
+    <img src="image/밥1.png" id="밥1" onClick="javascript:getLoc1(event)">
+
+    <img src="image/단무지.png" id="단무지" onClick="javascript:getLoc2(event)">
+    <img src="image/단무지.png" id="단무지2" onClick="javascript:getLoc2(event)">
+    <img src="image/당근.png" id="당근" onClick="javascript:getLoc2(event)">
+    <img src="image/당근.png" id="당근2" onClick="javascript:getLoc2(event)">
+    <img src="image/시금치.png" id="시금치" onClick="javascript:getLoc2(event)">
+    <img src="image/시금치.png" id="시금치2" onClick="javascript:getLoc2(event)">
+    
+
+    <img src="image/소스.png" id="소스">
+    <img src="image/이쑤시게.png" id="이쑤시게">
+    <img src="image/통2.png" id="통2">
+
+    <button onclick="
+    document.querySelector('#당근').src = 'image/마약김밥.png';
+    document.querySelector('#당근').id = '마약김밥';
+    document.querySelector('#김').style.visibility = 'hidden';
+    document.querySelector('#밥1').style.visibility = 'hidden';
+    document.querySelector('#당근2').style.visibility = 'hidden';
+    document.querySelector('#단무지').style.visibility = 'hidden';
+    document.querySelector('#시금치').style.visibility = 'hidden';
+    document.querySelector('#단무지2').style.visibility = 'hidden';
+    document.querySelector('#시금치2').style.visibility = 'hidden';
+    ">김밥말기</button>
+
+    <div id="timer">timer</div>
+</body>
+</html>
