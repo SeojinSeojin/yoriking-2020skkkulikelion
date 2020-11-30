@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BBTreeGB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0 0 0 0;
+}
+
+body {
+    min-height: 100vh;
+    --tw-shadow: inset 0 45vh 50px 0 rgb(224, 231, 255);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.main-title {
+    font-family: BMEuljiro10yearslater;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgb(49, 46, 129);
+}
+.nav-wrapper{
+    border: solid 4px #a3d8f4;
+    background-color: white;
+    width: 50vw;
+    position: absolute;
+    left:25vw;
+    top:38vh;
+    border-radius:0.5em;
+}
+.buttons{
+    position: absolute;
+    left:30vw;
+    top:48vh;
+}
