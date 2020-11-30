@@ -4,9 +4,9 @@
 
 ## Tasks To Do
 
-- [ ] ProtoTyping
+- [x] ProtoTyping
 - [ ] Build Site
-- [ ] Build Game
+- [x] Build Game
 
 ## Built With
 
