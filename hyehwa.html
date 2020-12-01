@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종로구 요리왕</title>
+    <link rel="stylesheet" href="hyehwa.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large pink darken-4">
+            <i class="large material-icons">apps</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating pink lighten-2 tooltipped" data-position="left" data-tooltip="내 지역 음식점 찾기"><i class="material-icons">home</i></a>
+            </li>
+            <li><a class="btn-floating pink tooltipped" data-position="top" data-tooltip="모든 게임 보기"><i class="material-icons">videogame_asset</i></a></li>
+            <li><a class="btn-floating pink darken-2 tooltipped" data-position="right" data-tooltip="창업 문의"><i class="material-icons">email</i></a></li>
+        </ul>
+    </div>
+    <div class="main-title">종로구 요리왕</div>
+
+    <div class="games">
+        <div class="games-title">
+            <h1>11월, 아기 식당들</h1>
+        </div>
+        <div class="carousel carousel-slider center" style="height: 33rem;">
+            <div class="card custom-card carousel-item" href="#one!">
+                <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./img/두찜.png">
+                </div>
+                <div class="custom-card-content">
+                    <span class="card-title activator grey-text text-darken-4">두찜 혜화점</span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">두찜 혜화점</span>
+                    <p>청춘직화의 뒤를 잇는 찜닭집</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+            </div>
+            <div class="card custom-card carousel-item" href="#five!">
+                <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./img/무던.png">
+                </div>
+                <div class="custom-card-content">
+                    <span class="card-title activator grey-text text-darken-4">무던</span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">무던</span>
+                    <p>분위기 한스푼 얹은 젤라또 맛집</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+            </div>
+            <div class="card custom-card carousel-item" href="#two!">
+                <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./img/불난집.png">
+                </div>
+                <div class="custom-card-content">
+                    <span class="card-title activator grey-text text-darken-4">불난집 떡볶이</span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">불난집 떡볶이</span>
+                    <p>오징어 튀김이 진짜 맛있습니다.. 드셔보세요!</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content:center; flex-direction:column; align-items:center; background:linear-gradient(white, rgb(232, 235, 247))">
+        <div class="games-title" style="margin-top: 2rem;margin-bottom:2rem">
+            <h1>전체 식당 보기</h1>
+        </div>
+        <div>
+            <div class="input-field">
+                <i class="material-icons prefix">local_dining</i>
+                <input id="icon_local_dining" type="text" class="validate">
+                <label for="icon_local_dining">Search</label>
+            </div>
+            <div class="chip">
+                <img src="./img/japan.PNG" alt="Contact Person"> 일식
+            </div>
+            <div class="chip">
+                <img src="./img/korea.PNG" alt="Contact Person"> 한식
+            </div>
+            <div class="chip">
+                <img src="./img/west-food.png" alt="Contact Person"> 양식
+            </div>
+            <div class="chip">
+                <img src="./img/burger.PNG" alt="Contact Person"> 햄버거
+            </div>
+
+        </div>
+        <div class="cards-container">
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal1">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/dabal1.jpg">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">다발 김치찌개</span>
+                        <div class="chip">
+                            <img src="./img/korea.PNG" alt="Contact Person"> 한식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>다발 김치찌개</h4>
+                    <img class="materialboxed" width="650" src="./img/dabal1.jpg">
+                    <img class="materialboxed" width="650" src="./img/dabal2.jpg">
+                    <p>🚩서울 종로구 성균관로 8 2층</p>
+                    <p>💬신촌에서 오랫동안 사랑받고 있는 김치찌개,김치찜 전문점입니다. 오픈하고 5년이 지나, 오랜 바람이였던 2호점을 오픈하게 되었습니다 특별히 다른 건 없습니다. 한번 더 위생관리에 신경쓰고, 청결한 환경에서 정성껏 재료를 준비하는 것 뿐입니다 항상 변치 않는 정직한 맛으로 여러분을 기다리고 있겠습니다. 많은 이용 바랍니다. 감사합니다^^
+
+                    </p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal2">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/soban1.jpg">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">소반</span>
+                        <div class="chip">
+                            <img src="./img/korea.PNG" alt="Contact Person"> 한식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h4>소반</h4>
+                    <img class="materialboxed" width="650" src="./img/soban1.jpg">
+                    <img class="materialboxed" width="650" src="./img/soban2.jpg">
+                    <p>🚩서울 종로구 명륜2길 4 1층</p>
+                    <p>💬잔치국수, 부추 돼지 생구이, 부추 돼지 양념구이</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal3">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/bc1.jpg">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">4.2 버거크루</span>
+                        <div class="chip">
+                            <img src="./img/burger.PNG" alt="Contact Person"> 햄버거
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <h4>4.2 버거크루</h4>
+                    <img class="materialboxed" width="650" src="./img/bc1.jpg">
+                    <img class="materialboxed" width="650" src="./img/bc2.jpg">
+                    <p>🚩서울 종로구 성균관로6길 6 1층</p>
+                    <p>💬수제버거집</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal4">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/shota1.jpg">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">쇼타돈부리</span>
+                        <div class="chip">
+                            <img src="./img/japan.PNG" alt="Contact Person"> 일식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <h4>쇼타돈부리</h4>
+                    <img class="materialboxed" width="650" src="./img/shota1.jpg">
+                    <img class="materialboxed" width="650" src="./img/shota2.jpg">
+                    <p>🚩서울 종로구 명륜2길 3-1</p>
+                    <p>💬일본식 덮밥, 카레</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal5">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/ehg1.jpg">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">은행골 대학로점</span>
+                        <div class="chip">
+                            <img src="./img/japan.PNG" alt="Contact Person"> 일식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <h4>은행골 대학로점</h4>
+                    <img class="materialboxed" width="650" src="./img/ehg1.jpg">
+                    <img class="materialboxed" width="650" src="./img/ehg2.jpg">
+                    <p>🚩서울 종로구 창경궁로26길 38</p>
+                    <p>💬초밥하고 참치회 전문점인 은행골 대학로점입니다. 브레이크타임은 3:30~ 4:30 매주 화요일은 휴무 입니다. 마지막주문은 월요일~토요일 9시반까지, 일요일은 8시반까지입니다.</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal6">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/명륜건강원2.png">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">명륜건강원</span>
+                        <div class="chip">
+                            <img src="./img/korea.PNG" alt="Contact Person"> 한식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <h4>명륜건강원</h4>
+                    <img class="materialboxed" width="650" src="./img/명륜건강원1.png">
+                    <img class="materialboxed" width="650" src="./img/명륜건강원2.png">
+                    <p>🚩혜화동 로터리 쪽 안암아파트 상가</p>
+                    <p>💬가게 이름도 메뉴 이름도 몹시 건강하다. 맛도 안 자극적이고 건강해서 참 좋았다. 메뉴를 주문하면 밥, 미역국, 샐러드, 밑반찬이 기본적으로 나온다. </p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal7">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/조선식당1.png">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">조선식당</span>
+                        <div class="chip">
+                            <img src="./img/korea.PNG" alt="Contact Person"> 한식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal7" class="modal">
+                <div class="modal-content">
+                    <h4>조선식당</h4>
+                    <img class="materialboxed" width="650" src="./img/조선식당1.png">
+                    <img class="materialboxed" width="650" src="./img/조선식당2.png">
+                    <p>🚩서울 종로구 대학로 128</p>
+                    <p>💬넓고 쾌적한 카페형 한식 레스토랑 조선식당에선 신선한 불고기와 불맛의 낙지볶음은 기본으로, 모든 소스와 육수역시 직접 만들어 그 깊은맛을 깔끔함과 위생까지 살려 손님상에 내어드립니다. 각종 회식과 가족모임, 혼술, 혼밥에 너무나도 좋은 세트메뉴구성및 아침 일찍부터 저녁늦게까지(10시오픈 24시마감) 시간대로 많은 분들이 찾아주시는 대학로의 5년 차 맛집입니다. 뜨거운 불판이 없는 스마트 인덕션이 설치되어 더욱
+                        쾌적하게 식사를 하실수 있습니다.</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+
+            <div id="modal8" class="modal">
+                <div class="modal-content">
+                    <h4>젠틀서퍼 성대점</h4>
+                    <img class="materialboxed" width="650" src="./img/젠틀서퍼1.png">
+                    <img class="materialboxed" width="650" src="./img/젠틀서퍼2.png">
+                    <p>🚩서울 종로구 명륜길 46-1</p>
+                    <p>💬한순간에 힙스터가 될수 있는 곳😎</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal8">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/젠틀서퍼1.png">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">젠틀서퍼</span>
+                        <div class="chip">
+                            <img src="./img/west-food.png" alt="Contact Person"> 양식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal9" class="modal">
+                <div class="modal-content">
+                    <h4>파스타마켓</h4>
+                    <img class="materialboxed" width="650" src="./img/파스타마켓1.png">
+                    <img class="materialboxed" width="650" src="./img/파스타마켓2.png">
+                    <p>🚩서울 종로구 대학로 11길 9-5</p>
+                    <p>혜화역 3,4번출구 사이 솔나무길 입구쪽 골목에 위치해있습니다. 된장예술과 전광수 커피 사이 골목길 입니다.</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal9">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/파스타마켓1.png">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">파스타마켓</span>
+                        <div class="chip">
+                            <img src="./img/west-food.png" alt="Contact Person"> 양식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal10" class="modal">
+                <div class="modal-content">
+                    <h4>홍곱창 성균관대점</h4>
+                    <img class="materialboxed" width="650" src="./img/홍곱창1.png">
+                    <img class="materialboxed" width="650" src="./img/홍곱창2.png">
+                    <p>🚩서울 종로구 성균관로 5길 13</p>
+                    <p>💬성대 곱창의 시작~!! 저희 성대홍곱창은 대학로와 성대생들의 핫플레이스로 사랑받는 곱창집으로 매콤한 야채곱창과 단!짠!!의 대명사 데리야끼막창으로 유명하며 멀리서도 드시기 위해 찾아오시는 줄서서먹는 맛집입니다</p>
+                    <a class="waves-effect waves-light btn" style="margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal10">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/홍곱창1.png">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">홍곱창 성균관대점</span>
+                        <div class="chip">
+                            <img src="./img/korea.PNG" alt="Contact Person"> 한식
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card custom-card">
+                <a class="modal-trigger" href="#modal11">
+                    <div class="card-image custom-card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./img/mayak1.PNG">
+                    </div>
+                    <div class="custom-card-content">
+                        <span class="card-title activator grey-text text-darken-4">모녀꼬마마약김밥</span>
+                        <div class="chip">
+                            <img src="./img/korea.PNG" alt="Contact Person"> 한식
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="modal11" class="modal">
+                <div class="modal-content">
+                    <h4>모녀꼬마마약김밥</h4>
+                    <img class="materialboxed" width="650" src="./img/mayak1.PNG">
+                    <img class="materialboxed" width="650" src="./img/mayak2.PNG">
+                    <p>🚩서울 종로구 동호로 403-23</p>
+                    <p>💬마약처럼 들어가는 마약김밥</p>
+                    <a class="waves-effect waves-light btn" href="gamepage.html" margin-top:3rem"><i class="material-icons left">games</i>게임 시작</a>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close"><i class="material-icons green-text">check</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Made By 김서진, 박태희, 윤서연 @ SKKU LIKELION</div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var options = {
+                indicators: true
+            }
+            var instances = M.Carousel.init(elems, options);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var options = {};
+            var instances = M.Tooltip.init(elems, options);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var options = {};
+            var instances = M.Modal.init(elems, options);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var options = {};
+            var instances = M.Materialbox.init(elems, options);
+        });
+    </script>
+</body>
+
+</html>
