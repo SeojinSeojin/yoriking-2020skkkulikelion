@@ -48,9 +48,6 @@
     border-top-width: 4px;
     border-top-style: double;
     width: 25rem;
-    background: linear-gradient(to right, #d500f9, #303f9f, #f50057);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .games-title h1 {
@@ -59,6 +56,9 @@
     animation: pulse;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
+    background: linear-gradient(to right, #d500f9, #303f9f, #f50057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .game-container {
