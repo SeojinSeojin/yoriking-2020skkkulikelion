@@ -18,30 +18,47 @@
 
 body {
     min-height: 100vh;
-    --tw-shadow: inset 0 45vh 50px 0 rgb(224, 231, 255);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .main-title {
     font-family: BMEuljiro10yearslater;
-    height: 20vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: rgb(49, 46, 129);
+    background: linear-gradient(to right, #d500f9, #d500f9, #303f9f, #f50057, #f50057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #ffebee;
+    transition: all 0.2s ease-in-out;
 }
-.nav-wrapper{
+
+.main-title:hover {
+    background: linear-gradient(to right, #303f9f, #303f9f, #f50057, #d500f9, #d500f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-wrapper {
     border: solid 4px #a3d8f4;
+    border-image: linear-gradient(to right, #f900bb, #d500f9, #303f9f, #f500ac, #f50057);
+    border-image-slice: 1;
+    border-radius: 2rem;
     background-color: white;
     width: 50vw;
     position: absolute;
-    left:25vw;
-    top:38vh;
-    border-radius:0.5em;
+    left: 25vw;
+    top: 45vh;
+    border-radius: 0.5em;
 }
-.buttons{
+
+.buttons {
     position: absolute;
-    left:30vw;
-    top:48vh;
+    left: 26vw;
+    top: 58vh;
+}
+
+.btn {
+    font-size: 1.2rem!important
 }

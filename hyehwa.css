@@ -16,11 +16,6 @@
     margin: 0 0 0 0;
 }
 
-body {
-    --tw-shadow: inset 0 15px 30px 0 rgba(36, 36, 41, 0.15);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .main-title {
     font-family: BMEuljiro10yearslater;
     height: 20vh;
@@ -28,13 +23,16 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: rgb(49, 46, 129);
+    background: linear-gradient(to right, #d500f9, #d500f9, #303f9f, #f50057, #f50057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #ffebee;
 }
 
 .games {
     height: 80vh;
     padding: 1rem;
-    background-color: rgb(224, 231, 255);
+    background-color: #ffcdd2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,10 +41,16 @@ body {
 .games-title {
     text-align: center;
     font-family: BBTreeGB;
-    color: rgb(55, 48, 163);
-    border-bottom: 1px solid #1a237e;
-    border-top: 1px solid #1a237e;
+    border-image: linear-gradient(to right, #d500f9, #303f9f, #f50057);
+    border-image-slice: 1;
+    border-bottom-width: 4px;
+    border-bottom-style: double;
+    border-top-width: 4px;
+    border-top-style: double;
     width: 25rem;
+    background: linear-gradient(to right, #d500f9, #303f9f, #f50057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .games-title h1 {
@@ -70,7 +74,7 @@ body {
     width: 25rem!important;
     height: 26rem!important;
     min-height: 320px!important;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1)!important
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1)!important;
 }
 
 .custom-card:hover {
@@ -113,7 +117,18 @@ body {
 }
 
 .chip {
+    transition: background 1s ease-in;
+    -moz-transition: background 1s ease-in;
+    -webkit-transition: background 1s ease-in;
+    -o-transition: background 1s ease-in;
+    -ms-transition: background 1s ease-in;
     cursor: pointer;
+    background: linear-gradient(to right, #d500f9, #303f9f, #f50072);
+    color: white!important
+}
+
+.chip:hover {
+    background: linear-gradient(to left, #d500f9, #303f9f, #f50072);
 }
 
 footer {

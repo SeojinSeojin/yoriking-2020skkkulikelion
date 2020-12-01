@@ -11,35 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+
+<body style="background-color:rgb(253, 245, 247)">
     <div class="main-title">종로구 요리왕</div>
+    <div style="position: absolute; top:26vh; text-align:center; width:100%; color:rgb(173, 157, 157)">게&nbsp 임&nbsp 과 &nbsp &nbsp맛&nbsp 집&nbsp 을 &nbsp &nbsp사&nbsp 랑&nbsp 한&nbsp 다&nbsp 면 &nbsp?</div>
     <div class="nav-wrapper">
-    <form action='./hyehwa.html' onsubmit = 'return locate();'> 
-        <div class="input-field">
-          <input id="search" type="search" name='search' type='submit' required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      
+        <form action='./hyehwa.html' onsubmit='return locate();'>
+            <div class="input-field">
+                <input id="search" type="search" name='search' type='submit' placeholder="지역을 검색해 주세요" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
     </div>
     <div class='buttons'>
-    <a class="waves-effect waves-light btn-small light-blue" href='./hyehwa.html'>혜화</a>
-    <a class="waves-effect waves-light btn-small light-blue" onclick="alarm()">강남</a>
-    <a class="waves-effect waves-light btn-small light-blue" onclick="alarm()">신촌</a>
+        <a class="waves-effect waves-light btn pink accent-2" href='./hyehwa.html'>혜화</a>
+        <a class="waves-effect waves-light btn pink accent-2" onclick="alarm()">강남</a>
+        <a class="waves-effect waves-light btn pink accent-2" onclick="alarm()">신촌</a>
     </div>
     </form>
-<script>
-    function alarm(){
-        alert("아직 준비중입니다!")
-    }
-    function locate(){
-        let search = document.querySelector('input');
-        if(search.value ==='혜화'){
-            return true;
-        } else{
-            alarm();
-            search.value = '';
-            return false;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script>
+        function alarm() {
+            alert("아직 준비중입니다!")
         }
-    }
-</script>
+
+        function locate() {
+            let search = document.querySelector('input');
+            if (search.value === '혜화') {
+                return true;
+            } else {
+                alarm();
+                search.value = '';
+                return false;
+            }
+        }
+    </script>
+</body>
