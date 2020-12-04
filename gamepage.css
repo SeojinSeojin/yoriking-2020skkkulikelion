@@ -19,17 +19,20 @@
 body {
     font-family: BBTreeGB;
     font-size: 1.7rem;
-    --tw-shadow: inset 0 15px 30px 0 rgb(224, 231, 255);
+    --tw-shadow: inset 0 15px 30px 0 #ffebee;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .main-title {
+    display: inline-block;
     font-family: BMEuljiro10yearslater;
     height: 15vh;
     padding-left:1rem;
     padding-top:0.5rem;
     font-size: 2rem;
-    color: rgb(49, 46, 129);
+    background: linear-gradient(to right, #d500f9, #d500f9, #303f9f, #f50057, #f50057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor:pointer;
 }
 .main-content{
@@ -41,7 +44,7 @@ body {
     background-color: white;
     border-radius:10px;
     text-align: center;
-    filter: drop-shadow(0 8px 10px rgb(188, 203, 252));
+    filter: drop-shadow(0 8px 10px #ffdbe0b4);
 
 }
 .info{
